@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+  <include
+      layout="@layout/toolbar_option"
+      />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opciones u \n otra opcioón"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold|normal"
+        android:textColor="@color/colorGray"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

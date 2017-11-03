@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    tools:context="com.khalyd.projectsocialservice.Activities.SplashScreen"
+    >
+
+    <RelativeLayout
+        android:id="@+id/r1_red"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorRed"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P"
+            android:layout_centerInParent="true"
+            android:textSize="100sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r2_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R"
+            android:layout_centerInParent="true"
+            android:textSize="100sp"
+            android:textStyle="bold"
+            android:layout_marginTop="130dp"
+            android:textColor="@color/colorBlack"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r3_green"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorGreen"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I"
+            android:layout_centerInParent="true"
+            android:textSize="100sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
