@@ -18,7 +18,6 @@ public class MainActivityBootom extends AppCompatActivity {
 
 
 
-
       private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener =
                 new BottomNavigationView.OnNavigationItemSelectedListener() {
 
