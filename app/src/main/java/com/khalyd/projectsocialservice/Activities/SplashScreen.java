@@ -12,7 +12,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.khalyd.projectsocialservice.MainActivityBootom;
+import com.facebook.AccessToken;
 import com.khalyd.projectsocialservice.R;
 
 import es.dmoral.toasty.Toasty;
@@ -29,9 +29,15 @@ public class SplashScreen extends AppCompatActivity {
 
     }
 
+
+
+
     private void myMethods(){
+
         animLayouts();
         timerunning();
+
+
 
     }
 
@@ -64,19 +70,25 @@ public class SplashScreen extends AppCompatActivity {
 
     private void timerunning(){
 
-        final String change = "Cambiando a México";
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                final Intent i = new Intent(SplashScreen.this,MainActivityBootom.class);
+
+
+                final Intent i = new Intent(SplashScreen.this,LoginFBTW.class);
                 startActivity(i);
-                Toasty.success(SplashScreen.this,change,Toast.LENGTH_LONG).show();
+              //  Toasty.success(SplashScreen.this,"Cambiando a México",Toast.LENGTH_LONG).show();
+
                 finish();
+
+             //   final Intent i = new Intent(SplashScreen.this,MainActivityBootom.class);
 
             }
         },6000);
 
 
     }
+
+
 }

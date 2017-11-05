@@ -5,7 +5,7 @@ android {
     buildToolsVersion "25.0.2"
     defaultConfig {
         applicationId "com.khalyd.projectsocialservice"
-        minSdkVersion 16 //From 19 to 16
+        minSdkVersion 19 //From 19 to 16
         targetSdkVersion 26
         versionCode 1
         versionName "NumeroVersion" //Si algo falla es esto que debe estar en "1.0"
@@ -26,11 +26,17 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
-    compile 'com.android.support:appcompat-v7:26.+'
+
+    compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.github.GrenderG:Toasty:1.2.5'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.android.support:design:26.+'
-    compile 'com.android.support:support-v4:26.+'
-    compile 'com.android.support:support-vector-drawable:26.+'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:support-vector-drawable:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)' //Working
+
     testCompile 'junit:junit:4.12'
 }
